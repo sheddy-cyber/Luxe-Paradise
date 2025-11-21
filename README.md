@@ -1,6 +1,8 @@
 Luxe Paradise Resort
 A modern, visually stunning resort website featuring cutting-edge web design with glassmorphism, gradient animations, and premium user experience.
+
 Features
+
 🎨 Modern Design
 
 Dark theme with animated gradient backgrounds
