@@ -27,6 +27,7 @@ Smooth 60fps animations
 Fast page load times
 
 📄 Pages
+
 🏠 Home Page
 
 Hero section with animated background
@@ -66,6 +67,7 @@ Font Awesome 6.4.0 - Icon library
 
 Color Scheme: Cyan (#00d4ff) and Pink (#ff6b9d) gradients
 Typography: Segoe UI system font for modern look
+
 Effects:
 
 Backdrop blur (glassmorphism)
