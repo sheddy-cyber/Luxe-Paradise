@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -541,5 +540,301 @@ body {
     .footer-section {
         border-right: none;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 12px 15px;
+    }
+
+    .navbar.scrolled {
+        padding: 10px 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .nav-links {
+        top: 55px;
+        right: -100%;
+        width: 100%;
+        height: calc(100vh - 55px);
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    .hero {
+        height: 40vh;
+        min-height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .rooms-section {
+        padding: 60px 15px;
+    }
+
+    .section-header {
+        margin-bottom: 50px;
+    }
+
+    .section-header h2 {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .section-header p {
+        font-size: 14px;
+        line-height: 1.6;
+        padding: 0 10px;
+    }
+
+    .rooms-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .room-card {
+        border-radius: 15px;
+    }
+
+    .room-card img {
+        height: 220px;
+    }
+
+    .room-content {
+        padding: 20px;
+    }
+
+    .room-content h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .room-content p {
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        padding: 14px 30px;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .feature-banner {
+        padding: 60px 15px;
+        height: 400px;
+        min-height: 350px;
+    }
+
+    .feature-banner-bg {
+        background-attachment: scroll;
+    }
+
+    .feature-content {
+        padding: 0 10px;
+    }
+
+    .feature-content h2 {
+        font-size: 28px;
+        line-height: 1.3;
+        margin-bottom: 25px;
+    }
+
+    .divider {
+        width: 120px;
+        height: 2px;
+        margin: 25px auto;
+    }
+
+    .feature-content p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-section {
+        padding: 50px 20px;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-section:last-child {
+        border-bottom: none;
+    }
+
+    .footer-section i {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    .footer-section p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .footer-social {
+        gap: 12px;
+        margin-top: 15px;
+    }
+
+    .footer-social a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer-social i {
+        font-size: 16px;
+        margin: 0;
+    }
+}
+
+/* Extra Small Mobile Devices (360px and below) */
+@media (max-width: 360px) {
+    .hero {
+        height: 35vh;
+        min-height: 250px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .section-header h2 {
+        font-size: 28px;
+    }
+
+    .section-header p {
+        font-size: 13px;
+    }
+
+    .rooms-section {
+        padding: 50px 12px;
+    }
+
+    .room-card img {
+        height: 200px;
+    }
+
+    .room-content {
+        padding: 18px;
+    }
+
+    .room-content h3 {
+        font-size: 18px;
+    }
+
+    .room-content p {
+        font-size: 13px;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        font-size: 11px;
+    }
+
+    .feature-banner {
+        padding: 50px 12px;
+        height: 350px;
+        min-height: 300px;
+    }
+
+    .feature-content h2 {
+        font-size: 24px;
+    }
+
+    .divider {
+        width: 100px;
+        margin: 20px auto;
+    }
+
+    .feature-content p {
+        font-size: 13px;
+    }
+
+    .footer-section {
+        padding: 40px 15px;
+    }
+
+    .footer-section i {
+        font-size: 32px;
+    }
+
+    .footer-section p {
+        font-size: 13px;
+    }
+
+    .footer-social a {
+        width: 32px;
+        height: 32px;
+    }
+
+    .footer-social i {
+        font-size: 14px;
+    }
+}
+
+/* Landscape Mobile Optimization */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        height: 60vh;
+        min-height: 350px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .feature-banner {
+        height: 80vh;
+        min-height: 400px;
+    }
+
+    .rooms-section {
+        padding: 80px 20px;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .room-card:hover {
+        transform: none;
+    }
+
+    .room-card:active {
+        transform: translateY(-5px) scale(1.01);
+    }
+
+    .btn:hover {
+        transform: none;
+    }
+
+    .btn:active {
+        transform: translateY(-2px);
+    }
+
+    .footer-social a:hover {
+        transform: none;
+    }
+
+    .footer-social a:active {
+        transform: translateY(-3px) rotate(180deg);
     }
 }

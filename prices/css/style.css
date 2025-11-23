@@ -743,3 +743,454 @@ body {
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 12px 15px;
+    }
+
+    .navbar.scrolled {
+        padding: 10px 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .nav-links {
+        top: 55px;
+        right: -100%;
+        width: 100%;
+        height: calc(100vh - 55px);
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    .hero {
+        height: 40vh;
+        min-height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .pricing-section {
+        padding: 60px 15px;
+    }
+
+    .section-header {
+        margin-bottom: 50px;
+    }
+
+    .section-header h2 {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .section-header p {
+        font-size: 14px;
+        line-height: 1.6;
+        padding: 0 10px;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .pricing-card {
+        padding: 40px 25px;
+        border-radius: 15px;
+    }
+
+    .pricing-card.featured {
+        transform: scale(1);
+        margin: 0;
+    }
+
+    .featured-badge {
+        top: -12px;
+        right: 20px;
+        padding: 6px 16px;
+        font-size: 11px;
+    }
+
+    .plan-name {
+        font-size: 12px;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+    }
+
+    .plan-price {
+        font-size: 52px;
+        margin-bottom: 8px;
+    }
+
+    .plan-features {
+        font-size: 14px;
+        line-height: 2.2;
+        margin: 25px 0;
+    }
+
+    .btn {
+        padding: 14px 30px;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .consultants-section {
+        padding: 60px 15px;
+    }
+
+    .consultants-bg {
+        background-attachment: scroll;
+    }
+
+    .consultants-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-top: 50px;
+    }
+
+    .consultant-card {
+        padding: 30px 20px;
+        border-radius: 15px;
+    }
+
+    .consultant-image {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+        border-width: 2px;
+    }
+
+    .consultant-card h3 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .consultant-card p {
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+
+    .social-icons {
+        gap: 12px;
+    }
+
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .cta-banner {
+        padding: 60px 15px;
+    }
+
+    .cta-banner h2 {
+        font-size: 28px;
+        line-height: 1.3;
+        margin-bottom: 25px;
+    }
+
+    .btn-cta {
+        padding: 16px 35px;
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .feature-banner {
+        padding: 60px 15px;
+    }
+
+    .feature-banner-bg {
+        background-attachment: scroll;
+    }
+
+    .feature-banner-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .feature-text h2 {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    .divider {
+        width: 120px;
+        height: 2px;
+        margin: 20px 0;
+    }
+
+    .feature-text p {
+        font-size: 14px;
+    }
+
+    .feature-image {
+        order: -1;
+    }
+
+    .feature-image img {
+        height: 250px;
+        border-radius: 15px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-section {
+        padding: 50px 20px;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-section:last-child {
+        border-bottom: none;
+    }
+
+    .footer-section i {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    .footer-section p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .footer-social {
+        gap: 12px;
+        margin-top: 15px;
+    }
+
+    .footer-social a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer-social i {
+        font-size: 16px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    /* Hero */
+    .hero {
+        height: 35vh;
+        min-height: 250px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    /* Section Headers */
+    .section-header h2 {
+        font-size: 28px;
+    }
+
+    .section-header p {
+        font-size: 13px;
+    }
+
+    .pricing-section {
+        padding: 50px 12px;
+    }
+
+    .pricing-card {
+        padding: 35px 20px;
+    }
+
+    .featured-badge {
+        top: -10px;
+        right: 15px;
+        padding: 5px 14px;
+        font-size: 10px;
+    }
+
+    .plan-name {
+        font-size: 11px;
+    }
+
+    .plan-price {
+        font-size: 46px;
+    }
+
+    .plan-features {
+        font-size: 13px;
+        line-height: 2;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        font-size: 11px;
+    }
+
+    .consultants-section {
+        padding: 50px 12px;
+    }
+
+    .consultants-grid {
+        gap: 25px;
+    }
+
+    .consultant-card {
+        padding: 25px 15px;
+    }
+
+    .consultant-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .consultant-card h3 {
+        font-size: 18px;
+    }
+
+    .consultant-card p {
+        font-size: 13px;
+    }
+
+    .social-icons a {
+        width: 32px;
+        height: 32px;
+        font-size: 13px;
+    }
+
+    .cta-banner {
+        padding: 50px 12px;
+    }
+
+    .cta-banner h2 {
+        font-size: 24px;
+    }
+
+    .btn-cta {
+        padding: 14px 30px;
+        font-size: 12px;
+    }
+
+    .feature-banner {
+        padding: 50px 12px;
+    }
+
+    .feature-text h2 {
+        font-size: 30px;
+    }
+
+    .divider {
+        width: 100px;
+        margin: 18px 0;
+    }
+
+    .feature-text p {
+        font-size: 13px;
+    }
+
+    .feature-image img {
+        height: 220px;
+    }
+
+    .footer-section {
+        padding: 40px 15px;
+    }
+
+    .footer-section i {
+        font-size: 32px;
+    }
+
+    .footer-section p {
+        font-size: 13px;
+    }
+
+    .footer-social a {
+        width: 32px;
+        height: 32px;
+    }
+
+    .footer-social i {
+        font-size: 14px;
+    }
+}
+
+/* Landscape Mobile Optimization */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        height: 60vh;
+        min-height: 350px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .pricing-section,
+    .consultants-section,
+    .feature-banner {
+        padding: 80px 20px;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .pricing-card:hover {
+        transform: none;
+    }
+
+    .pricing-card:active {
+        transform: translateY(-5px) scale(1.01);
+    }
+
+    .pricing-card.featured:active {
+        transform: translateY(-5px) scale(1.05);
+    }
+
+    .btn:hover {
+        transform: none;
+    }
+
+    .btn:active {
+        transform: translateY(-2px);
+    }
+
+    .consultant-card:hover {
+        transform: none;
+    }
+
+    .consultant-card:active {
+        transform: translateY(-5px);
+    }
+
+    .consultant-card:active .consultant-image {
+        transform: scale(1.05);
+    }
+
+    .social-icons a:hover {
+        transform: none;
+    }
+
+    .social-icons a:active {
+        transform: translateY(-3px) rotate(180deg);
+    }
+
+    .footer-section:hover {
+        background: rgba(255, 255, 255, 0.03);
+    }
+
+    .footer-section:active {
+        background: rgba(255, 255, 255, 0.05);
+    }
+}

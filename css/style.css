@@ -689,6 +689,7 @@ body {
         background: rgba(10, 14, 39, 0.98);
         backdrop-filter: blur(10px);
         flex-direction: column;
+        align-items: flex-start;
         padding: 40px;
         transition: right 0.4s ease-out;
     }
@@ -749,5 +750,321 @@ body {
 
     .cta h2 {
         font-size: 36px;
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 12px 15px;
+    }
+
+    .navbar.scrolled {
+        padding: 10px 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .nav-links {
+        top: 55px;
+        right: -100%;
+        width: 100%;
+        height: calc(100vh - 55px);
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 100vh;
+        padding: 0 15px;
+        justify-content: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-label {
+        font-size: 10px;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .btn {
+        padding: 14px 30px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        width: 100%;
+    }
+
+    .scroll-indicator {
+        bottom: 20px;
+    }
+
+    .scroll-indicator i {
+        font-size: 24px;
+    }
+
+    .rooms {
+        padding: 60px 15px;
+    }
+
+    .rooms-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-top: 0;
+    }
+
+    .room-card {
+        border-radius: 15px;
+    }
+
+    .room-card img {
+        height: 220px;
+    }
+
+    .room-info {
+        padding: 20px;
+    }
+
+    .room-info h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .room-info p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .cta {
+        padding: 60px 15px;
+    }
+
+    .cta p {
+        font-size: 12px;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+    }
+
+    .cta h2 {
+        font-size: 28px;
+        line-height: 1.3;
+        margin-bottom: 25px;
+    }
+
+    .features {
+        padding: 60px 15px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .feature {
+        padding: 30px 20px;
+        border-radius: 15px;
+    }
+
+    .feature i {
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+
+    .feature h3 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .feature p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        padding: 60px 15px;
+        gap: 30px;
+    }
+
+    .about-image {
+        order: 2;
+    }
+
+    .about-content {
+        order: 1;
+    }
+
+    .about-image img {
+        height: 250px;
+        border-radius: 15px;
+    }
+
+    .about-image::before {
+        top: -10px;
+        left: -10px;
+        right: 10px;
+        bottom: 10px;
+        border-radius: 15px;
+    }
+
+    .about-content p:first-child {
+        font-size: 12px;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+    }
+
+    .about-content h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .about-content p:not(:first-child) {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .gallery-section {
+        padding: 60px 0;
+    }
+
+    .gallery-header {
+        padding: 0 15px;
+        margin-bottom: 40px;
+    }
+
+    .gallery-header h2 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .gallery-header p {
+        font-size: 14px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 1px;
+    }
+
+    .gallery-item {
+        aspect-ratio: 16/9;
+    }
+
+    .footer {
+        padding: 60px 15px 30px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-bottom: 30px;
+    }
+
+    .footer-section h4 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .footer-section p,
+    .footer-section a {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .footer-section i {
+        margin-right: 8px;
+    }
+
+    .footer-social {
+        gap: 12px;
+        margin-top: 15px;
+    }
+
+    .footer-social a i {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .footer-bottom {
+        padding-top: 30px;
+        font-size: 12px;
+    }
+
+    .footer-section .btn {
+        margin-top: 15px !important;
+        padding: 10px 25px !important;
+        font-size: 11px !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .cta h2 {
+        font-size: 24px;
+    }
+
+    .about-content h2 {
+        font-size: 28px;
+    }
+
+    .gallery-header h2 {
+        font-size: 28px;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        font-size: 11px;
+    }
+
+    .room-card img {
+        height: 200px;
+    }
+
+    .feature {
+        padding: 25px 15px;
+    }
+
+    .footer-section .btn {
+        padding: 8px 20px !important;
+        font-size: 10px !important;
     }
 }
